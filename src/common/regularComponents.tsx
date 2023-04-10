@@ -142,14 +142,24 @@ export const CircleButton = styled(PurpleButton)<{ appear?: boolean }>`
   `}
 `;
 
-export const PhoneNumber = styled(RegularText16)<{ white?: boolean }>`
+type IPhoneNumber = {
+  white?: boolean;
+  center?: boolean;
+};
+
+export const PhoneNumber = styled(RegularText16)<IPhoneNumber>`
   color: ${colors.purple};
   font-weight: 400;
-  min-width: 149px;
+  min-width: 150px;
+  text-align: center;
+  ${(p: any) =>
+    p.center &&
+    `
+  text-align: center !important`};
   ${(p: any) =>
     p.white &&
     `
-  color: white;`}
+  color: white;`};
 `;
 
 export const TextInput = styled.input.attrs({

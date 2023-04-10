@@ -55,6 +55,9 @@ export const FirstCol = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
   height: 100%;
+  @media (max-width: 850px) {
+    grid-column-gap: 20px;
+  }
 `;
 
 export const SecondCol = styled(FlexCol)`

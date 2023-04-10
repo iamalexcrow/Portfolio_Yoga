@@ -17,7 +17,7 @@ const Header = ({
   setReturnPlace,
   reference,
 }: {
-  scrollTo: (s?: string) => void;
+  scrollTo: (s?: string, instant?: boolean) => void;
   setReturnPlace: React.Dispatch<
     React.SetStateAction<"start" | "catalog" | "prices">
   >;
@@ -26,9 +26,9 @@ const Header = ({
   const [isBurgerMenuOpen, setBurgerMenuOpen] = useState(false);
   const [width] = useWindowSize();
 
-  const onClick = (link: string) => {
+  const onClick = (link: string, instant?: boolean) => {
     setReturnPlace("start");
-    scrollTo(link);
+    scrollTo(link, instant);
     if (width < css.laptop_width) {
       setBurgerMenuOpen(false);
     }
@@ -38,7 +38,7 @@ const Header = ({
     return headerButtons.data.map((b: IHeaderButton) => {
       return (
         <HeaderButton
-          onClick={() => onClick(b.link)}
+          onClick={() => onClick(b.link, !!color)}
           key={b.title}
           color={color}
         >
@@ -65,7 +65,9 @@ const Header = ({
         {width >= css.laptop_width && (
           <>
             <ButtonsContainer>{parseButtons()}</ButtonsContainer>
-            <PhoneNumber>+1 (XXX) XXX-XXXX</PhoneNumber>
+            <PhoneNumber white={true} center={true}>
+              +1 (XXX) XXX-XXXX
+            </PhoneNumber>
           </>
         )}
       </Wrapper>

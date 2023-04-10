@@ -42,14 +42,14 @@ function App() {
     reviews: reviewsRef,
   };
 
-  const scrollTo = (link?: string) => {
+  const scrollTo = (link?: string, instant?: boolean) => {
     window.scrollTo({
       top:
         typeof link === "string"
           ? refs[link].current.offsetTop - 15
           : document.body.scrollHeight,
       left: 0,
-      behavior: "smooth",
+      behavior: instant ? "auto" : "smooth",
     });
   };
 
