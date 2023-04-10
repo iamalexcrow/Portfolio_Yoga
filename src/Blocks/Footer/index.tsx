@@ -64,6 +64,8 @@ const Footer = ({
                 <Title>Time</Title>
                 <Info>{footerData.time}</Info>
               </InfoItem>
+            </FirstCol>
+            <FirstCol>
               <InfoItem>
                 <Title>Phone</Title>
                 <PhoneNumber>
