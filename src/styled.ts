@@ -9,20 +9,20 @@ export const AppWrapper = styled.div`
     background-size: 120%;
   }
   @media (max-width: 750px) {
-    background-size: 130%;
+    background-size: 200%;
   }
   @media (max-width: 650px) {
-    background-size: 140%;
+    background-size: 200%;
   }
-  @media (max-width: 550px) {
+  /* @media (max-width: 550px) {
     background-size: 150%;
+  } */
+  @media (max-width: 550px) {
+    background-size: 270%;
   }
-  @media (max-width: 450px) {
-    background-size: 160%;
-  }
-  @media (max-width: 350px) {
+  /* @media (max-width: 350px) {
     background-size: 180%;
-  }
+  } */
 `;
 
 export const Clouds = styled.div`
@@ -68,7 +68,6 @@ export const BackgroundFlowerLeft = styled.div`
   }
   @media (max-width: 650px) {
     background-size: 140%;
-    padding-bottom: 0px;
   }
   @media (max-width: 550px) {
     background-size: 150%;

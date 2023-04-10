@@ -46,7 +46,7 @@ export const Container = styled(Center)`
   margin: 0 auto;
   margin-top: 40px;
   @media (max-width: 850px) {
-    margin-top: 20px;
+    margin-top: 160px;
   }
 `;
 
@@ -80,11 +80,11 @@ export const ButtonBlock = styled(Flex)`
     bottom: -70px;
   }
   @media (max-width: 850px) {
-    bottom: -50px;
+    bottom: -170px;
   }
-  @media (max-width: 450px) {
+  /* @media (max-width: 450px) {
     bottom: -65px;
-  } ;
+  } ; */
 `;
 
 export const Button = styled(Center)`
@@ -126,7 +126,7 @@ export const Footer = styled(Flex)`
     margin-top: 150px;
   }
   @media (max-width: 850px) {
-    margin-top: 110px;
+    margin-top: 300px;
   }
 `;
 

@@ -29,7 +29,6 @@ export const TopPart = styled(Flex)`
   }
   @media (max-width: 850px) {
     background-size: 400%;
-    padding-bottom: 40px;
     padding-bottom: 0px;
   }
   @media (max-width: 450px) {
@@ -37,12 +36,16 @@ export const TopPart = styled(Flex)`
   }
   @media (max-width: 350px) {
     background-size: 650%;
+    padding: 0px;
   }
 `;
 
 export const BottomPart = styled(Flex)`
   background-color: #8373a1;
   height: 100px;
+  @media (max-width: 500px) {
+    height: 70px;
+  }
 `;
 
 export const FlexCols = styled(Flex)`
