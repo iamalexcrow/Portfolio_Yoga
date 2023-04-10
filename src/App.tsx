@@ -64,7 +64,7 @@ function App() {
     } else {
       setName({ value: "", error: false });
       setPhone({ value: "", error: false });
-      setInterest("Successfully sent your reauest");
+      setInterest("Successfully sent your request");
       setTimeout(() => {
         setInterest("");
       }, 3000);

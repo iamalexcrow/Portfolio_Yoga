@@ -5,6 +5,7 @@ export const AppWrapper = styled.div`
   background-image: url("./HeroBackground.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  height: 100vh;
   @media (max-width: 850px) {
     background-size: 120%;
   }
