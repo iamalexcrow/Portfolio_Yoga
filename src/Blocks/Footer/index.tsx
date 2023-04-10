@@ -2,9 +2,9 @@ import React from "react";
 import {
   BottomPart,
   FirstCol,
+  FlexCols,
   FooterLink,
   FooterLinksContainer,
-  Grid,
   Info,
   InfoItem,
   InterestText,
@@ -54,7 +54,7 @@ const Footer = ({
     <Wrapper>
       <TopPart>
         <ContentContainer>
-          <Grid>
+          <FlexCols>
             <FirstCol>
               <InfoItem>
                 <Title>Address</Title>
@@ -98,13 +98,6 @@ const Footer = ({
                 }
               />
               <ReasonBlock>
-                {/* <TextInput
-                  placeholder="Commentary"
-                  value={interest}
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                    setInterest(e.target.value)
-                  }
-                /> */}
                 <InterestText>{interest}</InterestText>
                 {interest && (
                   <SvgButton onClick={() => setInterest("")}>
@@ -115,7 +108,7 @@ const Footer = ({
 
               <RedButton onClick={submitForm}>Request a class</RedButton>
             </SecondCol>
-          </Grid>
+          </FlexCols>
         </ContentContainer>
       </TopPart>
       <BottomPart>

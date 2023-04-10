@@ -45,7 +45,7 @@ export const BottomPart = styled(Flex)`
   height: 100px;
 `;
 
-export const Grid = styled(Flex)`
+export const FlexCols = styled(Flex)`
   justify-content: space-between;
   align-items: center;
   @media (max-width: 1000px) {

@@ -42,4 +42,5 @@ export const LogoContainer = styled(Flex)`
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+  margin-top: 4px;
 `;
