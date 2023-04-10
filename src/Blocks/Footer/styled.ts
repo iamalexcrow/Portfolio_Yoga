@@ -10,6 +10,7 @@ import colors from "../../Constnants/colors";
 
 export const Wrapper = styled(FlexCol)`
   margin-bottom: 0px;
+  overflow: hidden;
 `;
 
 export const TopPart = styled(Flex)`
