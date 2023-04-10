@@ -151,11 +151,10 @@ export const PhoneNumber = styled(RegularText16)<IPhoneNumber>`
   color: ${colors.purple};
   font-weight: 400;
   min-width: 150px;
-  text-align: center;
   ${(p: any) =>
     p.center &&
     `
-  text-align: center !important`};
+  text-align: center`};
   ${(p: any) =>
     p.white &&
     `

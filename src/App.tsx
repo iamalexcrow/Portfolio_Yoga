@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { AppWrapper, BackgroundFlowerLeft, Clouds } from "./styled";
-import Fab from "@mui/material/Fab";
 import Hero from "./Blocks/Hero";
 import Catalog from "./Blocks/Catalog";
 import Prices from "./Blocks/Prices";

@@ -37,11 +37,11 @@ export const MonthButton = styled(SmallText)<{ underlined?: boolean }>`
     transition: 0.3s;
     text-shadow: 0px 0px 20px ${colors.pink};
   }
+  @media (max-width: 1200px) {
+    margin-right: 30px;
+  }
   ${(p: any) =>
     p.underlined &&
     `
   text-decoration: underline`}
-  @media(max-width: 1200px) {
-    margin-right: 30px;
-  }
 `;

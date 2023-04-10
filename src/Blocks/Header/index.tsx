@@ -65,9 +65,7 @@ const Header = ({
         {width >= css.laptop_width && (
           <>
             <ButtonsContainer>{parseButtons()}</ButtonsContainer>
-            <PhoneNumber white={true} center={true}>
-              +1 (XXX) XXX-XXXX
-            </PhoneNumber>
+            <PhoneNumber>+1 (XXX) XXX-XXXX</PhoneNumber>
           </>
         )}
       </Wrapper>

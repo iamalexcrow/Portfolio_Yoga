@@ -13,7 +13,9 @@ const BurgerMenu = ({
     <Wrapper dissapear={!isOpen}>
       <FlexCol>
         {parseButtons("white")}
-        <PhoneNumber white>+1 (XXX) XXX-XXXX</PhoneNumber>
+        <PhoneNumber white center>
+          +1 (XXX) XXX-XXXX
+        </PhoneNumber>
       </FlexCol>
     </Wrapper>
   );
