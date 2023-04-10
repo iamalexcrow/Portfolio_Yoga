@@ -162,7 +162,7 @@ export const PhoneNumber = styled.a.attrs({
   min-width: 150px;
   line-height: 20px;
   letter-spacing: 0em;
-  text-decoration: none;
+  text-decoration: underline;
   text-align: left;
   cursor: pointer;
   @media (max-width: 1200px) {
@@ -182,7 +182,8 @@ export const PhoneNumber = styled.a.attrs({
 `;
 
 export const StyledLink = styled.a`
-  text-decoration: none;
+  text-decoration: underline;
+  color: ${colors.purple_darker};
 `;
 
 export const TextInput = styled.input.attrs({
