@@ -8,7 +8,9 @@ import {
 } from "../../common/regularComponents";
 import colors from "../../Constnants/colors";
 
-export const Wrapper = styled(FlexCol)``;
+export const Wrapper = styled(FlexCol)`
+  margin-bottom: 0px;
+`;
 
 export const TopPart = styled(Flex)`
   background-color: transparent;
