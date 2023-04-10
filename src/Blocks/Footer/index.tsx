@@ -19,7 +19,6 @@ import {
   BlockTitle,
   ContentContainer,
   FlexCol,
-  SmallText,
   TextInput,
 } from "../../common/regularComponents";
 import { StringState } from "../../common/interfaces";
