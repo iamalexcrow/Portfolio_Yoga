@@ -84,6 +84,10 @@ export const SmallText = styled.p<{ red?: boolean }>`
   letter-spacing: 0em;
   text-align: left;
   color ${colors.purple_darker};
+  @media(max-width: 550px) {
+    font-size: 10px;
+    line-height: 15px;
+  }
   ${(p: any) =>
     p.red &&
     `

@@ -61,6 +61,10 @@ export const CardTitle = styled(BlockTitle)`
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 25px;
+  @media (max-width: 550px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
   &:last-child {
     margin-bottom: 0px;
   }
