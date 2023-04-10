@@ -11,7 +11,7 @@ import Header from "./Blocks/Header";
 import VectorRight from "./assets/svg/VectorRight";
 import { CircleButton } from "./common/regularComponents";
 import { StringState } from "./common/interfaces";
-import { useWindowSize, useYOffset } from "./useWindowSize";
+import { useYOffset } from "./useWindowSize";
 
 function App() {
   const [returnPlace, setReturnPlace] = useState<
@@ -20,7 +20,7 @@ function App() {
   const [interest, setInterest] = useState<string>("");
   const [name, setName] = useState<StringState>({ value: "", error: false });
   const [phone, setPhone] = useState<StringState>({ value: "", error: false });
-  const [width, height] = useWindowSize();
+
   const y = useYOffset();
 
   const headerRef = useRef();

@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   MonthButton,
   MonthsButtons,
   PriceCardsContainer,
   Wrapper,
 } from "./styled";
-import { Center, Flex } from "../../common/regularComponents";
 import PriceCard from "../../Components/PriceCard";
 import BlockWrapper from "../../Components/BlockWrapper";
 import monthsData from "../../assets/data/monthsData.json";

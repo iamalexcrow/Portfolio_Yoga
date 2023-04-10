@@ -40,6 +40,7 @@ export const MonthButton = styled(SmallText)<{ underlined?: boolean }>`
   @media (max-width: 1200px) {
     margin-right: 30px;
   }
+
   ${(p: any) =>
     p.underlined &&
     `
