@@ -9,7 +9,7 @@ import {
 } from "./styled";
 import { Review } from "../../common/interfaces";
 import QuotationMarks from "../../assets/svg/QuotationMarks";
-import { Flex, SmallText } from "../../common/regularComponents";
+import { Flex, SmallText, StyledLink } from "../../common/regularComponents";
 
 const ReviewCard = ({ data }: { data: Review }) => {
   return (
@@ -24,11 +24,15 @@ const ReviewCard = ({ data }: { data: Review }) => {
           <SmallText red>{data.name}</SmallText>
           <Date>{data.date}</Date>
           <Flex>
-            {data.links.map((linkLogo: any, index) => {
+            {data.svg.map((linkLogo: any, index) => {
               return (
-                <LogoContainer key={`${data.name}_${index}`}>
-                  {linkLogo}
-                </LogoContainer>
+                <StyledLink
+                  href={data.link}
+                  target="a_blank"
+                  key={`${data.name}_${index}`}
+                >
+                  <LogoContainer>{linkLogo}</LogoContainer>
+                </StyledLink>
               );
             })}
           </Flex>

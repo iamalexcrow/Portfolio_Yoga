@@ -3,7 +3,8 @@ export interface Review {
   date: string;
   image: string;
   review: string;
-  links: Array<any>;
+  svg: Array<any>;
+  link: string;
 }
 
 export interface IPriceCard {

@@ -27,9 +27,13 @@ const TrainerCard = ({ data }: any) => {
             </HeaderData>
           </CardHeader>
           <FlexCol>
-            {data.description.map((d: string) => {
-              return <CardTitle key={d.slice(0, 10)}>{d}</CardTitle>;
-            })}
+            {width > 650 ? (
+              data.description.map((d: string) => {
+                return <CardTitle key={d.slice(0, 10)}>{d}</CardTitle>;
+              })
+            ) : (
+              <CardTitle>{data.description[0]}</CardTitle>
+            )}
           </FlexCol>
         </CardData>
       </Card>

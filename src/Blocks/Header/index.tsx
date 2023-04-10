@@ -7,6 +7,16 @@ import BurgerButton from "../../Components/BurgerButton";
 import BurgerMenu from "../../Components/BurgerMenu";
 import { PhoneNumber } from "../../common/regularComponents";
 import css from "../../Constnants/css";
+
+interface IHeader {
+  scrollTo: (s?: string, instant?: boolean) => void;
+  setReturnPlace: React.Dispatch<
+    React.SetStateAction<"start" | "catalog" | "prices">
+  >;
+  reference: React.MutableRefObject<undefined>;
+  isBurgerMenuOpen: boolean;
+  setBurgerMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 interface IHeaderButton {
   title: string;
   link: string;
@@ -16,14 +26,9 @@ const Header = ({
   scrollTo,
   setReturnPlace,
   reference,
-}: {
-  scrollTo: (s?: string, instant?: boolean) => void;
-  setReturnPlace: React.Dispatch<
-    React.SetStateAction<"start" | "catalog" | "prices">
-  >;
-  reference: React.MutableRefObject<undefined>;
-}) => {
-  const [isBurgerMenuOpen, setBurgerMenuOpen] = useState(false);
+  isBurgerMenuOpen,
+  setBurgerMenuOpen,
+}: IHeader) => {
   const [width] = useWindowSize();
 
   const onClick = (link: string, instant?: boolean) => {
@@ -65,7 +70,7 @@ const Header = ({
         {width >= css.laptop_width && (
           <>
             <ButtonsContainer>{parseButtons()}</ButtonsContainer>
-            <PhoneNumber>+1 (XXX) XXX-XXXX</PhoneNumber>
+            <PhoneNumber>+52 (55) 1236 6188</PhoneNumber>
           </>
         )}
       </Wrapper>

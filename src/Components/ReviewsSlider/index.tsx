@@ -12,48 +12,54 @@ const data: Array<Review> = [
     name: "Cair",
     date: "March 2020",
     image: "./customers/01.jpeg",
-    links: [<TwitterSvg />, <FacebookSvg />],
+    svg: [<TwitterSvg />, <FacebookSvg />],
     review: "Thanks to this studio, my back pain is gone! Life-changing",
+    link: "https://www.linkedin.com/in/aleksandrvorona/",
   },
   {
     name: "Mary",
     date: "September 2021",
     image: "./customers/02.jpeg",
-    links: [<VkSvg />, <FacebookSvg />],
+    svg: [<VkSvg />, <FacebookSvg />],
     review:
       "I fell in love with yoga at this studio! The instructors are knowledgeable and supportive, and the classes are challenging yet accessible. Thanks to their guidance, I've learned to fly and have gained so much confidence and strength on and off the mat. I highly recommend this studio to anyone looking to deepen their practice!",
+    link: "https://www.linkedin.com/in/aleksandrvorona/",
   },
   {
     name: "Tom",
     date: "April 2020",
     image: "./customers/03.jpeg",
-    links: [<TwitterSvg />],
+    svg: [<TwitterSvg />],
     review:
       "I joined this yoga studio and it has been a game-changer! Not only have I gained confidence in my practice, but I also saw my toes for the first time in years! The best part? I made new friends who share my love for yoga. Highly recommend!",
+    link: "https://www.linkedin.com/in/aleksandrvorona/",
   },
   {
     name: "Jerry",
     date: "May 2022",
     image: "./customers/04.jpeg",
-    links: [<TwitterSvg />, <FacebookSvg />],
+    svg: [<TwitterSvg />, <FacebookSvg />],
     review:
       "I absolutely loved my experience at this yoga studio! The atmosphere was so peaceful and welcoming, and the approach was both challenging and accessible. The instructors were knowledgeable and attentive, creating a safe and supportive space to deepen my practice. I left feeling rejuvenated and centered. Can't wait to come back!",
+    link: "https://www.linkedin.com/in/aleksandrvorona/",
   },
   {
     name: "Emily",
     date: "January 2023",
     image: "./customers/05.jpeg",
-    links: [<TwitterSvg />, <VkSvg />],
+    svg: [<TwitterSvg />, <VkSvg />],
     review:
       "I am so grateful to this yoga studio for helping me find my inner balance and overcome my fears. The classes are transformative and the instructors are amazing. I highly recommend this studio to anyone looking to deepen their practice and cultivate mindfulness.",
+    link: "https://www.linkedin.com/in/aleksandrvorona/",
   },
   {
     name: "Greg",
     date: "March 2023",
     image: "./customers/06.jpeg",
-    links: [<VkSvg />, <FacebookSvg />],
+    svg: [<VkSvg />, <FacebookSvg />],
     review:
       "I feel so calm and centered after practicing at this yoga studio. The atmosphere is so peaceful and I've become one with everything. Highly recommend!",
+    link: "https://www.linkedin.com/in/aleksandrvorona/",
   },
 ];
 
@@ -63,7 +69,9 @@ const ReviewsSlider = () => {
   let settings = {
     infinite: true,
     dots: true,
-    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    speed: 2000,
     slidesToShow: width > 850 ? 2 : 1,
     slidesToScroll: 1,
     arrows: false,

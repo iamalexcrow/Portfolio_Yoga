@@ -5,12 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 import { Dot, Dots, Image } from "./styled";
 import TrainerCard from "../TrainerCard";
 import team from "../../assets/data/teamData.json";
+import { useWindowSize } from "../../useWindowSize";
 
 const TeamSlider = () => {
+  const [width] = useWindowSize();
+
   let settings = {
     infinite: true,
-    dots: true,
-    speed: 500,
+    dots: width > 650 ? true : false,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

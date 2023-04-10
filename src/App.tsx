@@ -17,6 +17,7 @@ function App() {
   const [returnPlace, setReturnPlace] = useState<
     "start" | "catalog" | "prices"
   >("start");
+  const [isBurgerMenuOpen, setBurgerMenuOpen] = useState(false);
   const [interest, setInterest] = useState<string>("");
   const [name, setName] = useState<StringState>({ value: "", error: false });
   const [phone, setPhone] = useState<StringState>({ value: "", error: false });
@@ -72,13 +73,17 @@ function App() {
 
   return (
     <AppWrapper>
-      <CircleButton onClick={() => scrollTo(returnPlace)} appear={y >= 730}>
-        <VectorRight />
-      </CircleButton>
+      {!isBurgerMenuOpen && (
+        <CircleButton onClick={() => scrollTo(returnPlace)} appear={y >= 730}>
+          <VectorRight />
+        </CircleButton>
+      )}
       <Header
         scrollTo={scrollTo}
         setReturnPlace={setReturnPlace}
         reference={headerRef}
+        isBurgerMenuOpen={isBurgerMenuOpen}
+        setBurgerMenuOpen={setBurgerMenuOpen}
       />
       <Hero
         scrollTo={scrollTo}

@@ -2,6 +2,8 @@ import React from "react";
 import {
   BottomPart,
   FirstCol,
+  FooterLink,
+  FooterLinksContainer,
   Grid,
   Info,
   InfoItem,
@@ -12,13 +14,13 @@ import {
   SvgButton,
   Title,
   TopPart,
-  WhiteText,
   Wrapper,
 } from "./styled";
 import {
   BlockTitle,
   ContentContainer,
-  FlexCol,
+  PhoneNumber,
+  StyledLink,
   TextInput,
 } from "../../common/regularComponents";
 import { StringState } from "../../common/interfaces";
@@ -54,26 +56,26 @@ const Footer = ({
         <ContentContainer>
           <Grid>
             <FirstCol>
-              <FlexCol>
-                <InfoItem>
-                  <Title>Address</Title>
-                  <Info>{footerData.address}</Info>
-                </InfoItem>
-                <InfoItem>
-                  <Title>Time</Title>
-                  <Info>{footerData.time}</Info>
-                </InfoItem>
-              </FlexCol>
-              <FlexCol>
-                <InfoItem>
-                  <Title>Phone</Title>
+              <InfoItem>
+                <Title>Address</Title>
+                <Info>{footerData.address}</Info>
+              </InfoItem>
+              <InfoItem>
+                <Title>Time</Title>
+                <Info>{footerData.time}</Info>
+              </InfoItem>
+              <InfoItem>
+                <Title>Phone</Title>
+                <PhoneNumber>
                   <Info>{footerData.phone}</Info>
-                </InfoItem>
-                <InfoItem>
-                  <Title>Email</Title>
+                </PhoneNumber>
+              </InfoItem>
+              <InfoItem>
+                <Title>Email</Title>
+                <StyledLink href="mailto: iamalexcrow@gmail.com">
                   <Info>{footerData.email}</Info>
-                </InfoItem>
-              </FlexCol>
+                </StyledLink>
+              </InfoItem>
             </FirstCol>
             <SecondCol>
               <BlockTitle>Sign up for a free class today</BlockTitle>
@@ -118,10 +120,10 @@ const Footer = ({
       </TopPart>
       <BottomPart>
         <ContentContainer>
-          <FirstCol>
-            <WhiteText>Aleksandr Vorona</WhiteText>
-            <WhiteText>2023 Done with love to land a job</WhiteText>
-          </FirstCol>
+          <FooterLinksContainer>
+            <FooterLink>2023 Aleksandr Vorona</FooterLink>
+            <FooterLink>FrontEnd Developer</FooterLink>
+          </FooterLinksContainer>
         </ContentContainer>
       </BottomPart>
     </Wrapper>

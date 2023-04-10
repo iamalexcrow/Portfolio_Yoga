@@ -147,10 +147,26 @@ type IPhoneNumber = {
   center?: boolean;
 };
 
-export const PhoneNumber = styled(RegularText16)<IPhoneNumber>`
+export const PhoneNumber = styled.a.attrs({
+  href: "https://api.whatsapp.com/send?phone=525512366188",
+  target: "a_blank",
+})<IPhoneNumber>`
   color: ${colors.purple};
+  font-family: Montserrat;
+  font-size: 16px;
   font-weight: 400;
   min-width: 150px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+  @media (max-width: 850px) {
+    font-size: 12px;
+  }
   ${(p: any) =>
     p.center &&
     `
@@ -159,6 +175,10 @@ export const PhoneNumber = styled(RegularText16)<IPhoneNumber>`
     p.white &&
     `
   color: white;`};
+`;
+
+export const StyledLink = styled.a`
+  text-decoration: none;
 `;
 
 export const TextInput = styled.input.attrs({
@@ -188,5 +208,3 @@ export const TextInput = styled.input.attrs({
     border-color: ${colors.pink}
   `}
 `;
-
-export const StyledLink = styled.a``;

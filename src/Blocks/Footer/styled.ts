@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  Center,
   Flex,
   FlexCol,
   PurpleButton,
@@ -32,7 +33,10 @@ export const TopPart = styled(Flex)`
     padding-bottom: 0px;
   }
   @media (max-width: 450px) {
-    background-size: 500%;
+    background-size: 550%;
+  }
+  @media (max-width: 350px) {
+    background-size: 650%;
   }
 `;
 
@@ -55,11 +59,22 @@ export const FirstCol = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
   height: 100%;
+  width: 100%;
   @media (max-width: 850px) {
     grid-column-gap: 20px;
   }
+  @media (max-width: 550px) {
+    grid-column-gap: 10px;
+  }
+  @media (max-width: 350px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
+export const FooterLinksContainer = styled(Center)`
+  height: 100%;
+  justify-content: space-between;
+`;
 export const SecondCol = styled(FlexCol)`
   min-width: 500px;
   @media (max-width: 850px) {
@@ -79,13 +94,25 @@ export const Title = styled(SmallText)`
 
 export const Info = styled(SmallText)``;
 
-export const WhiteText = styled(SmallText)`
+export const FooterLink = styled.a.attrs({
+  href: "https://www.linkedin.com/in/aleksandrvorona/",
+  target: "a_blank",
+})`
+  margin: 0px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
   color: ${colors.white};
   width: 100%;
   opacity: 0.5;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  text-decoration: none;
+  cursor: pointer;
   &:last-child {
     justify-content: flex-end;
   }

@@ -14,7 +14,7 @@ const BurgerMenu = ({
       <FlexCol>
         {parseButtons("white")}
         <PhoneNumber white center>
-          +1 (XXX) XXX-XXXX
+          +52-(55)-1236-6188
         </PhoneNumber>
       </FlexCol>
     </Wrapper>
