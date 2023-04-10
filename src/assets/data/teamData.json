@@ -1,0 +1,30 @@
+{"data": [
+  {
+    "name": "April",
+    "photo": "./team/01.jpeg",
+    "experience": "8 years",
+    "description": [
+      "Meet April, our inspirational yoga teacher who has a karma score of 5. She specializes in working with people with disabilities, creating accessible and empowering classes for all.",
+      "With her compassionate and gentle approach, April encourages students to connect with their bodies and breath, cultivating mindfulness and inner peace.",
+      "April's classes are designed to meet the unique needs of each individual student."
+    ]
+  },
+  {
+    "name": "Sara",
+    "photo": "./team/02.jpeg",
+    "experience": "7 years",
+    "description": [
+      "Meet Sara, our popular yoga teacher and YouTuber! Her fun and entertaining classes have earned her a loyal following of yoga enthusiasts from all over the world.",
+      "Sara's upbeat personality and engaging teaching style make her classes a joy to attend. She loves to combine traditional and modern yoga practices to create a unique and enjoyable experience for her students. Whether you're a beginner or an experienced yogi, Sara's classes are accessible and fun for all levels."
+    ]
+  },
+  {
+    "name": "Jack",
+    "photo": "./team/03.jpeg",
+    "experience": "7 years",
+    "description": [
+      "Meet Jack, our professional yoga teacher who studied in India and has worked in 7 countries. With a deep understanding and appreciation for yoga, Jack's classes are a blend of traditional and modern practices designed to meet the needs of each individual student.",
+      "Jack's extensive experience and knowledge make him a sought-after teacher. Jack is committed to helping his students deepen their practice, build strength and flexibility, and achieve their goals."
+    ]
+  }
+]}

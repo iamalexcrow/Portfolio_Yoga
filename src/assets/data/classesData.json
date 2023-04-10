@@ -1,0 +1,38 @@
+{"data": [
+    {
+      "img": "./class1.jpeg",
+      "title": "Hatha-yoga",
+      "time": [
+        "Mn, Wd, Fr - from 10:00 to 12:00",
+        "Tu, Th – from 19:00 to 21:00"
+      ],
+      "instructor": "Namastéph"
+    },
+    {
+      "img": "./class2.jpeg",
+      "title": "Ashtanga-yoga",
+      "time": [
+        "Mon, Wed, Fri - from 14:00 to 16:00",
+        "Tue, Thu - from 10:00 to 12:00"
+      ],
+      "instructor": "Asana Montana"
+    },
+    {
+      "img": "./class3.jpeg",
+      "title": "Kundalini-yoga",
+      "time": [
+        "Mon, Wed, Fri - from 8:00 to 10:00 AM",
+        "Tue, Thu - from 6:00 to 8:00 PM"
+      ],
+      "instructor": "Yogini Asana-ta"
+    },
+    {
+      "img": "./class4.jpeg",
+      "title": "Bikram-yoga",
+      "time": [
+        "Monday, Wednesday, Friday: 10:30 AM - 12:30 PM",
+        "Tuesday, Thursday: 7:00 PM - 9:00 PM"
+      ],
+      "instructor": "Asana Banana"
+    }
+  ]}

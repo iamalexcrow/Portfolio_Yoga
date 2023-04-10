@@ -1,0 +1,17 @@
+{"data": [
+  {
+    "title": "Morning classes",
+    "description": "Classes from 8am to 4pm",
+    "price": ["250$", "1300$", "2500$"]
+  },
+  {
+    "title": "Unlimited",
+    "description": "Unlimited classes",
+    "price": ["450$", "2200$", "4200$"]
+  },
+  {
+    "title": "Evening classes",
+    "description": "Classes from 5pm to 9pm",
+    "price": ["320$", "1600$", "3000$"]
+  }
+]}
