@@ -64,8 +64,6 @@ const Footer = ({
                 <Title>Time</Title>
                 <Info>{footerData.time}</Info>
               </InfoItem>
-            </FirstCol>
-            <FirstCol>
               <InfoItem>
                 <Title>Phone</Title>
                 <PhoneNumber>
@@ -79,6 +77,7 @@ const Footer = ({
                 </StyledLink>
               </InfoItem>
             </FirstCol>
+
             <SecondCol>
               <BlockTitle>Sign up for a free class today</BlockTitle>
               <TextInput

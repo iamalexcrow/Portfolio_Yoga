@@ -63,6 +63,7 @@ export const FlexCols = styled(Flex)`
 export const FirstCol = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
   grid-column-gap: 40px;
   height: 100%;
   width: 100%;
