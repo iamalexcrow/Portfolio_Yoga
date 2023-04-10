@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ButtonsContainer, HeaderButton, Wrapper } from "./styled";
 import LogoSvg from "../../assets/svg/LogoSvg";
 import headerButtons from "../../assets/data/headerButtons.json";
