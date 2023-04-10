@@ -126,7 +126,7 @@ export const Footer = styled(Flex)`
     margin-top: 150px;
   }
   @media (max-width: 850px) {
-    margin-top: 250px;
+    margin-top: 220px;
   }
 `;
 
